@@ -1,6 +1,6 @@
 # Gateway Management Application
 
-This application is to manage gateways. User can view list of gateways, add a new gateways with devices, update a gateways and all of its devices or delete a gateway.
+This application is to manage gateways. User can view list of existing gateways, add a new gateways along with new devices, update an existing gateway and all of its devices or delete an existing gateway.
 Code is structured with 2 folders gateway-client and gateway-server
 
 ## Gateway-server
@@ -10,7 +10,7 @@ Start the gateway-server application by running command below (Java 8 is require
 
 ### Supported features
  - Create a gateway and its devices
- - Get list of gateways and devices
+ - Get list of existing gateways and devices
  - Get details of a gateway
  - Partial update a gateway: update gateway name, ip address, add new devices, update existing devices and delete devices in one call.
 #### API document can be accessed at http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/gateway-controller
@@ -18,7 +18,7 @@ Start the gateway-server application by running command below (Java 8 is require
 ![Alt text](img/database.png?raw=true "H2 Database")
 ## Gateway-client
 This is UI application built with React and material ui. Node is required to be installed on the machine 
-To start the application,
+To start the application, run commands below
 ### `npm install`
 To install all dependencies needed to run the application
 
@@ -31,7 +31,7 @@ To start the application. The gateway-client application can be accessed at http
 
 #### Add a new gateway:
 ![Alt text](img/CreateGateway.png?raw=true "Create gateway")
-Enter gateway information, add devices and then click Add gateway
+Enter gateway information, add devices and then click 'Add gateway' button
 
 #### View and edit a gateway
 - Select gateway then click view details
