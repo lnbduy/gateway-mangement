@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "dc071284-c72f-4461-9c60-73bf96b8f01e",
+		"name": "Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all gateways",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create a gateway",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lQG1lMi5jb20iLCJ1c2VybmFtZSI6ImR1eWxlIiwiX2lkIjoiNjExY2NmOTAzOWZiMmJiOTg3OGQxNDNkIiwiaWF0IjoxNjI5Mjc4MzIyfQ.-T2B1xStvfdOA_ID8CjPcMxsNh_T2rlU4ieF8Ufp-q4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"serialNumber\":\"CDE1234\",\n   \"name\":\"gateway1\",\n   \"ipv4Address\":\"192.168.1.121\",\n   \"devices\":[\n      {\n         \"vendor\":\"Vendor 1\",\n         \"status\":\"ONLINE\"\n      },\n      {\n         \"vendor\":\"Vendor 2\",\n         \"status\":\"ONLINE\"\n      }\n   ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gateways",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gateways"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update gateway",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lQG1lMi5jb20iLCJ1c2VybmFtZSI6ImR1eWxlIiwiX2lkIjoiNjExY2NmOTAzOWZiMmJiOTg3OGQxNDNkIiwiaWF0IjoxNjI5Mjc4MzIyfQ.-T2B1xStvfdOA_ID8CjPcMxsNh_T2rlU4ieF8Ufp-q4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \n        \"name\": \"Updat gateway name\",\n        \"ipv4Address\": \"192.168.1.33\",\n        \"devices\": [\n            {\n                \"id\": 1,\n                \"vendor\": \"Vendor 1\",\n                \"status\": \"ONLINE\"\n            },\n            {\n                \"id\": 2,\n                \"vendor\": \"Vendor 2\"\n            },\n            {\n              \n                \"vendor\": \"Vendor 3\",\n                \"status\": \"ONLINE\"\n            }\n        ]\n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gateways/ABC123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gateways",
+						"ABC123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gateway",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gateways/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gateways",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a gateway",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lQG1lMi5jb20iLCJ1c2VybmFtZSI6ImR1eWxlIiwiX2lkIjoiNjExY2NmOTAzOWZiMmJiOTg3OGQxNDNkIiwiaWF0IjoxNjI5Mjc4MzIyfQ.-T2B1xStvfdOA_ID8CjPcMxsNh_T2rlU4ieF8Ufp-q4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/gateways/ABC123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gateways",
+						"ABC123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
