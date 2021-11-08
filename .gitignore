@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/gateway-client/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/gateway-client/coverage
+
+# production
+/gateway-client//build
+
+# misc
+/gateway-client/.DS_Store
+/gateway-client/.env.local
+/gateway-client/.env.development.local
+/gateway-client/.env.test.local
+/gateway-client/.env.production.local
+
+/gateway-client/npm-debug.log*
+/gateway-client/yarn-debug.log*
+/gateway-client/yarn-error.log*
