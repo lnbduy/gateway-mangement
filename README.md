@@ -16,6 +16,7 @@ Start the gateway-server application by running command below (Java 8 is require
 #### API document can be accessed at http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/gateway-controller
 #### Database can be accessed at http://localhost:8080/h2
 ![Alt text](img/database.png?raw=true "H2 Database")
+#### Postman collection for API requests: gateway-server/Gateway.postman_collection.json
 ## Gateway-client
 This is UI application built with React and material ui. Node is required to be installed on the machine 
 To start the application, run commands below
