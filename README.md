@@ -18,7 +18,7 @@ Start the gateway-server application by running command below (Java 8 is require
 ![Alt text](img/database.png?raw=true "H2 Database")
 ## Gateway-client
 This is UI application built with React and material ui. Node is required to be installed on the machine 
-To start the application,
+To start the application, run commands below
 ### `npm install`
 To install all dependencies needed to run the application
 
