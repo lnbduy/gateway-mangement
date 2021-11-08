@@ -113,6 +113,10 @@ function GatewayDetails() {
             title="Devices"
             columns={columns}
             data={devices}
+            options={{
+              pageSize: 10,
+              pageSizeOptions: [10, 20],
+            }}
             editable={{
               onRowAdd: (newData) =>
                 new Promise((resolve, reject) => {
